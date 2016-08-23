@@ -24,12 +24,12 @@
             </applications>
             <items>
                 <item>
-                    <name>OpenSWAN PLUTO process</name>
+                    <name>strongSWAN CHARON process</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>proc.num[pluto]</key>
+                    <key>proc.num[charon]</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -337,7 +337,7 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template App IPSEC VPN:proc.num[pluto].last()}&lt;1</expression>
+            <expression>{Template App IPSEC VPN:proc.num[charon].last()}&lt;1</expression>
             <name>IPSEC Deamon not running on {HOST.NAME}</name>
             <url/>
             <status>0</status>
